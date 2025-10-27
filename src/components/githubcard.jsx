@@ -5,11 +5,21 @@ export default function GitHubCard({ data }) {
 
   return (
     <div className="p-4 shadow rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-white">
-      <img src={data.avatar_url} alt="avatar" className="w-20 h-20 rounded-full" />
-      <h2 className="text-xl font-bold mt-2">{data.login}</h2>
-      <p>Repos: {data.public_repos}</p>
-      <p>Followers: {data.followers}</p>
-      <p>Following: {data.following}</p>
+      {/* Title at the top */}
+      <h1 className="text-2xl font-bold mb-4">GitHub</h1>
+
+      {/* Avatar and stats in a row */}
+      <div className="flex items-center">
+        {/* Avatar image on the left */}
+        <img src={data.avatar_url} alt="avatar" className="w-20 h-20 rounded-full mr-4" />
+
+        
+        <div>
+          <p className="font-bold">Repos: {data.public_repos}</p>
+          <p>Followers: {data.followers}</p>
+          <p>Following: {data.following}</p>
+        </div>
+      </div>
     </div>
   );
 }
