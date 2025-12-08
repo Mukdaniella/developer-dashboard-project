@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import WeatherCard from "../components/WeatherCard";
+import WeatherCard from "../components/weathercard";
 
 export const useFetchWeather = (city) => {
   const [weather, setWeather] = useState(null);

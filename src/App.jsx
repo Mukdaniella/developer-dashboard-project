@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Navbar from "./components/Navbar";
-import GitHubCard from "./components/GitHubCard";
-import WeatherCard from "./components/WeatherCard";
+import Navbar from "./components/navbar";
+import GitHubCard from "./components/githubcard";
+import WeatherCard from "./components/weathercard";
 import { useFetchGitHub } from "./hooks/useFetchGitHub";
 import { useFetchWeather } from "./hooks/useFetchWeather";
 import { ThemeContext } from "./context/themecontext";
