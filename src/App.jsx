@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import Navbar from "./components/navbar";
 import GitHubCard from "./components/githubcard";
 import WeatherCard from "./components/weathercard";
-import { useFetchGitHub } from "./hooks/useFetchGitHub";
-import { useFetchWeather } from "./hooks/useFetchWeather";
+import { useFetchGitHub } from "./hooks/usefetchgithub";
+import { useFetchWeather } from "./hooks/usefetchweather";
 import { ThemeContext } from "./context/themecontext";
 
 export default function App() {
