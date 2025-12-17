@@ -1,18 +1,89 @@
-# React + Vite
+**Developer Dashboard**
+**Description**
+The Developer Dashboard is a responsive web application built with React and Tailwind CSS that displays real-time developer and environment data.
+It helps developers track useful information such as GitHub profile statistics and current weather conditions, all within a clean and modern dashboard interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project focuses on API data fetching, state management, props usage, and Light/Dark mode implementation to enhance user experience.
 
-Currently, two official plugins are available:
+**Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GitHub Profile Card with live user data
+Weather Card showing real-time weather updates
+Light/Dark mode toggle with persistent theme handling
+Responsive layout for mobile, tablet, and desktop
+Loading indicators and graceful error handling
 
-## React Compiler
+ **Dashboard Components**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The application is built using reusable and modular components:
 
-Note: This will impact Vite dev & build performances.
+Navbar
+Displays dashboard title
+Contains Light/Dark mode toggle
 
-## Expanding the ESLint configuration
+GitHubCard
+Fetches and displays GitHub user data
+Shows avatar, repositories, followers, and following count
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+WeatherCard
+Fetches real-time weather data
+Displays temperature, weather condition, wind speed, and live current time
+
+**APIs Used**
+
+GitHub API
+https://api.github.com/users/Mukdaniella
+
+Weather API
+https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}
+Used to fetch current temperature, weather conditions, and wind speed.
+
+**Technologies Used**
+
+React
+Tailwind CSS
+Fetch API
+JavaScript
+GitHub for version control
+
+**Screenshoot**
+<img width="1248" height="545" alt="Screenshot " src="https://github.com/user-attachments/assets/58d3008b-4e52-4235-a537-409b8d4c4182" />
+
+**Deployed Link**
+https://developer-dashboard-project-2l9o.vercel.app/
+
+**Setup Instructions**
+
+Clone the Repository
+git clone https://github.com/Mukdaniella/developer-dashboard-project.git
+
+Navigate to the Project Folder
+cd developer-dashboard-project
+
+Install Dependencies
+npm install
+
+Run the Project Locally
+npm run dev
+
+The application will run at:
+http://localhost:3000
+
+**Folder Structure**
+src/
+│── components/
+│   ├── Navbar.jsx
+│   ├── GitHubCard.jsx
+│   ├── WeatherCard.jsx
+│
+│── context/
+│    ├── themecontext.jsx
+│
+│── hooks/
+│    ├── usefetchgithub.jsx
+│    ├── usefetchweather.jsx
+││
+│── App.jsx
+│── main.jsx
+│── index.css
+
